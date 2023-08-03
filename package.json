@@ -1,0 +1,70 @@
+{
+	"name": "Pangu-Markdown",
+	"displayName": "Pangu-Markdown",
+	"description": "Pangu format for markdown",
+	"version": "0.0.6",
+	"publisher": "Alowree",
+	"engines": {
+		"vscode": "^1.80.2"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Alowree/pangu-markdown"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"main": "./extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "pangu.format",
+				"title": "Pangu Format"
+			}
+		],
+		"menus": {
+			"editor/context": [
+				{
+					"when": "resourceLangId == markdown",
+					"command": "pangu.format",
+					"group": "1_modification"
+				}
+			]
+		},
+		"configuration": {
+			"type": "object",
+			"title": "Pangu Configuration",
+			"properties": {
+				"pangu.auto_format_on_save": {
+					"type": "boolean",
+					"default": false,
+					"description": "Auto apply Pangu format on save"
+				}
+			}
+		}
+	},
+	"scripts": {
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"typescript": "^2.0.3",
+		"vscode": "^1.0.0",
+		"mocha": "^2.3.3",
+		"@types/node": "^6.0.40",
+		"@types/mocha": "^2.2.32"
+	},
+	"__metadata": {
+		"id": "14e15559-448c-4acc-91ef-2c8edf62e877",
+		"publisherId": "3399d071-4a19-41ef-b05c-0c5e316a8378",
+		"publisherDisplayName": "Alowree",
+		"targetPlatform": "undefined",
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"installedTimestamp": 1685180282696,
+		"preRelease": false
+	}
+}
