@@ -1,8 +1,14 @@
 # Pangu-Markdown 
 
-## Function
 
-1. Add a whitespace between Chinese and English, for instance, conveting from “中文English中文” alike to “中文 English 中文”
+
+## What is it?
+
+Pangu-Markdown is a VS Code extension that help format your markdown documents appropriately when writing with VS Code as your text editor and with Chinese Mandarin as your primary language.
+
+## What it does?
+
+1. Add a whitespace between Chinese and English, for instance, converting from “中文English中文” alike to “中文 English 中文”
 2. Add a whitespace between Chinese and Digit, for instance, conveting from “中文123中文” alike to “中文 123 中文”
 3. Add a whitespace between Chinese and Inline Code, converting from “中文文字和`行内代码`之间” alike to “中文文字和 `行内代码` 之间”
 4. Add a whitespace between Chinese and Bold, converting from “中文文字和**粗体文字**之间” alike to “中文文字和 **粗体文字** 之间”
@@ -16,7 +22,10 @@
 
 
 
-## Usage
+## How to use it?
+
+1. Search and Install Pangu-Markdown from Marketplace
+2. Replace file `C:\Users\Your-Use\.vscode\extensions\xlthu.pangu-markdown-0.0.6\extension.js` with `exension.js` that you download from this repository
 
 ```
 Ctrl+Shift+P -> Pangu Format
