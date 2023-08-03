@@ -6,9 +6,9 @@ Pangu-Markdown is a VS Code extension that help format your markdown documents a
 
 This code is a Visual Studio Code (VSCode) extension for formatting Markdown documents, specifically for handling Chinese characters and punctuation. The original extension is named "Pangu-Markdown" and available in Marketplace. `extension.js` in this repository is a rewrite by Alowree Xu.
 
-## What does this do? If you are a developer of VS Code extensions, sometimes editing other's extension code to suit your own workflow...
+## What does this do? 
 
-Here's a breakdown of what the code does:
+If you are a developer of VS Code extensions, sometimes editing other's extension code to suit your own workflow, here's a breakdown of what the code does:
 
 - `activate(context)`: This function is called when the extension is activated. It registers a command `pangu.format` that can be called by the user to format the current document. It also stars a `Watcher` that listens for the `onWillSaveTextDocument` event to automatically format the document before saving, if the `auto_format_on_save` configuration is set to `true`.
 
@@ -29,7 +29,9 @@ Here's a breakdown of what the code does:
 
 In summary, this extension helps to format Markdown documents, especially those containing Chinese characters, according to certain rules. It can format documents manually when the user runs the `pangu.format` command, or automatically before the document is saved if the `auto_format_on_save` configuration is set to `true`.
 
-## What does this do? If you are a user of VS Code, often writing Markdown files in Chinese Mandarin...
+## What does this do? 
+
+If you are a user of VS Code, often writing Markdown files in Chinese Mandarin, here's a breakdown of what the code does:
 
 1. Add a whitespace between Chinese and English, for instance, converting from “中文English中文” alike to “中文 English 中文”
 2. Add a whitespace between Chinese and Digit, for instance, conveting from “中文123中文” alike to “中文 123 中文”
