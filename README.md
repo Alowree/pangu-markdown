@@ -4,9 +4,9 @@
 
 Pangu-Markdown is a VS Code extension that help format your markdown documents appropriately when writing with VS Code as your text editor and with Chinese Mandarin as your primary editing language.
 
-This code is a Visual Studio Code (VSCode) extension for formatting Markdown documents, specifically for handling Chinese characters and punctuation. The original extension is named "Pangu-Markdown" and available in Marketplace. `extension.js` in this repository is a rewrite by Alowree Xu.
+This code is a Visual Studio Code (VSCode) extension for formatting Markdown documents, specifically for handling Chinese characters and punctuation. The original extension is named "Pangu-Markdown" and available in Marketplace. `extension.js` in this repository is a rewrite, based on two existing extensions, `Pangu-Markdown` and `Pangu-Markdown-VSCode`.
 
-## What does this do? 
+## What does this do?
 
 If you are a developer of VS Code extensions, sometimes editing other's extension code to suit your own workflow, here's a breakdown of what the code does:
 
@@ -29,12 +29,12 @@ If you are a developer of VS Code extensions, sometimes editing other's extensio
 
 In summary, this extension helps to format Markdown documents, especially those containing Chinese characters, according to certain rules. It can format documents manually when the user runs the `pangu.format` command, or automatically before the document is saved if the `auto_format_on_save` configuration is set to `true`.
 
-## What does this do? 
+## What does this do?
 
 If you are a user of VS Code, often writing Markdown files in Chinese Mandarin, here's a breakdown of what the code does:
 
-1. Add a whitespace between Chinese and English, for instance, converting from “中文English中文” alike to “中文 English 中文”
-2. Add a whitespace between Chinese and Digit, for instance, conveting from “中文123中文” alike to “中文 123 中文”
+1. Add a whitespace between Chinese and English, for instance, converting from “中文 English 中文” alike to “中文 English 中文”
+2. Add a whitespace between Chinese and Digit, for instance, conveting from “中文 123 中文” alike to “中文 123 中文”
 3. Add a whitespace between Chinese and Inline Code, converting from “中文文字和`行内代码`之间” alike to “中文文字和 `行内代码` 之间”
 4. Add a whitespace between Chinese and Bold, converting from “中文文字和**粗体文字**之间” alike to “中文文字和 **粗体文字** 之间”
 5. Add a whitespace before and after a Superlink, converting from “超链接样式[点击这里](https://wiki.marapython.com/)有很多种” alike to “超链接样式 [点击这里](https://wiki.marapython.com/) 有很多种”
@@ -54,7 +54,6 @@ If you are a user of VS Code, often writing Markdown files in Chinese Mandarin, 
 5. Create a new Markdown file or open an existing file
 6. Key in some content, hopefully with Chinese and English in between
 
-
 ```
 Ctrl+Shift+P -> Pangu Format
 ```
@@ -72,5 +71,3 @@ Right Click -> Pangu Format
 | pangu.auto_format_on_save | Auto apply Pangu format on save |
 
 ## Thanks
-
-
